@@ -618,7 +618,7 @@ function Convert-CSV {
 			$sheet++
 		}
 		
-		$output = "$path\$XLSXfilename"
+		$output = $path + "\" + $XLSXfilename
 		Write-Host "Enregistrement du fichier XLSX => $XLSXfilename"
 		$xlsx.SaveAs($output)
 		$excelapp.quit()
