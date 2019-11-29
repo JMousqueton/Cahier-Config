@@ -2,9 +2,9 @@
     .NOTES
     ===========================================================================
      Créé par:    Christophe HARIVEL
-     Blog:          www.vrun.fr
-     Twitter:       @harivchr
-        ===========================================================================
+     	Blog:     www.vrun.fr
+     	Twitter:  @harivchr
+    ===========================================================================
     .DESCRIPTION
         L'objectif de ce script est de créer un cahier de configuration VMware au format excel
     .NOTICE
