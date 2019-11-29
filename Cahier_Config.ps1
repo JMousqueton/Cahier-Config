@@ -237,7 +237,7 @@ function Get-ESXi-Infos{
 				
 			}
 			
-			$dns = ((Get-EsxCli -VMHost $esx.Name).network.ip.dns.server.list.Invoke()).DNSServers
+			$dns = ((Get-EsxCli -V2 -VMHost $esx.Name).network.ip.dns.server.list.Invoke()).DNSServers
 			$dns = ($dns -join " - ")
 			
 			$acpi = (get-view ($esx | get-view).configManager.powersystem).Info.CurrentPolicy.ShortName
