@@ -76,7 +76,7 @@ Function Get-VCenter-Infos {
 			;break
         }
         invalid { Write-Host -ForegroundColor Red "VCHA State is in invalid state ...";break}
-        notConfigured { Write-Host "VCHA is not configured";break}
+        notConfigured { Write-Host; Write-Host "	VCHA is not configured";break}
         prepared { Write-Host "VCHA is being prepared, please try again in a little bit ...";break}
     }
 	
